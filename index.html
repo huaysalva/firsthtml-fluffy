@@ -16,9 +16,16 @@
                 font-size: 20px;
                 color: peachpuff;
             }
+
+            section {
+                display: -webkit-flex;
+                display: flex;
+                }
+                
             nav {
-                float: left;
-                width: 12%;
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
                 background: papayawhip; 
                 border: 3px solid white;
                 padding: 2px;
@@ -28,29 +35,25 @@
                 padding: 0;
                  }
             article {
-                float: left;
+                -webkit-flex: 3;
+                -ms-flex: 3;
+                flex: 3;
                 padding: 2px;
                 width: 75%;
                 background-color: papayawhip;
                 }
-            section:after {
-                     content: "";
-                     display: table;
-                     clear: both;
-                     }
-                footer {
 
+            footer {
                     background-color: lightcoral;
                     padding: 10px;
                     text-align: center;
                     color: peachpuff;
                     }
-                    @media (max-width: 600px) {
-                        nav, article {
-                            width: 100%;
-                            height: auto;
-                            }
-                            }
+                   @media (max-width: 600px) {
+                       section {
+                           -webkit-flex-direction: column;
+                           flex-direction: column;  }
+                           }
 
 
             body {background-color: peachpuff;}
@@ -114,6 +117,6 @@
                 Brought to you by Caffeine Unlimited
             </pre>
         </footer>
-        
+
     </body>
 </html>
