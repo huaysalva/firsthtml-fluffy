@@ -9,7 +9,7 @@
          * {
                 box-sizing: border-box;
             }
-            
+
             header {
                 background-color: papayawhip;
                 padding: 2%;
@@ -84,7 +84,7 @@
 
                 }
                 
-            div{
+            .default{
         
                 background-color: papayawhip;
                 width: 200;
@@ -93,8 +93,25 @@
                 overflow: auto;
                 
             }
+            .dropdown {
+                 position: relative;
+                 display: inline-block;
+                 }
             
-        
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: papayawhip;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px lightcoral;
+                padding: 12px 16px;
+                z-index: 1;
+                }
+                
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }            
+      
         </style>
     </head>
 
@@ -103,11 +120,24 @@
         <header>FLUFFY PUFFS READS</header>
         <section>
             <nav>
-                <ul>
-                    <li><a href="index.html"  style="color: lightcoral;">&#9825; Main</a></li>
-                    <li><a href="rec.html" style="color: lightcoral;">&#9825; Recommended!</a></li>
-                    <li><a href="shonenai.html"  style="color: lightcoral;">&#9825; BL</a></li>
+
+                <ul style="border: 1px solid lightcoral; text-align: center;">
+                    <li><a href="index.html"  style="color: lightcoral;">&#9825; MAIN</a></li>
+
+                    <div class="dropdown">
+                        <il><p style="color: lightcoral; text-decoration: underline;">&#9825; MENU</p></il>
+                    <ul style="text-align: left;">
+
+                        <div class="dropdown-content">
+                            <li><a href="rec.html" style="color: lightcoral;">&#9825; Recommended!</a></li>
+                            <li><a href="isekais.html" style="color: lightcoral;">&#9825; Isekai</a></li>
+                            <li><a href="shonenai.html"  style="color: lightcoral;">&#9825; BL</a></li>
+                            </div> 
+
+                    </ul>                       
+                        </div>
                 </ul>
+
             </nav>
 
             <article>
@@ -119,7 +149,7 @@
             <img src="https://cdn.shopify.com/s/files/1/1374/2665/products/1_8d37686b-f042-4d98-9462-1358f94773bc.png?v=1570146714.webp"
             alt="Who made me a princess" style="max-width:50%;height:auto;"/></pre>
 
-            <div>
+            <div class="default">
             When I opened my eyes I had become a princess!
             But out of all characters in this romance novel, 
             why is it the princess who has the fate of dying to her own blood-related dad, the emperor!
@@ -138,7 +168,7 @@
                     <img src="https://cdn.discordapp.com/attachments/726086890280714260/741510947407134842/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f.jpg" 
                     alt="Raeliana" style="max-width: 50%;height:auto;"/>
                 </pre>
-                <div>
+                <div class="default">
                     Poisoned to death by her own betrothed?! 
                     Eunha didn’t wake up in a novel’s story just to get killed off again as an unfortunate extra! 
                     To change her story she needs a cover… 

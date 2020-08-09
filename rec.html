@@ -80,17 +80,34 @@
 
                 }
                 
-            div{
-
+                       .default{
+        
                 background-color: papayawhip;
                 width: 200;
                 height: 150;
                 font-family:'Times New Roman', Times, serif ;
                 overflow: auto;
-
+                
             }
+            .dropdown {
+                 position: relative;
+                 display: inline-block;
+                 }
             
-        
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: papayawhip;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px lightcoral;
+                padding: 12px 16px;
+                z-index: 1;
+                }
+                
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }            
+      
         </style>
     </head>
 
@@ -99,10 +116,22 @@
         <header>FLUFFY PUFFS READS</header>
         <section>
             <nav>
-                <ul>
-                    <li><a href="index.html"  style="color: lightcoral;">&#9825; Main</a></li>
-                    <li><a href="isekais.html" style="color: lightcoral;">&#9825; Isekai</a></li>
-                    <li><a href="shonenai.html"  style="color: lightcoral;">&#9825; BL</a></li>
+
+                <ul style="border: 1px solid lightcoral; text-align: center;">
+                    <li><a href="index.html"  style="color: lightcoral;">&#9825; MAIN</a></li>
+
+                    <div class="dropdown">
+                        <il><p style="color: lightcoral; text-decoration: underline;">&#9825; MENU</p></il>
+                    <ul style="text-align: left;">
+
+                        <div class="dropdown-content">
+                            <li><a href="rec.html" style="color: lightcoral;">&#9825; Recommended!</a></li>
+                            <li><a href="isekais.html" style="color: lightcoral;">&#9825; Isekai</a></li>
+                            <li><a href="shonenai.html"  style="color: lightcoral;">&#9825; BL</a></li>
+                        </div> 
+
+                    </ul>                       
+                        </div>
                 </ul>
             </nav>
 
@@ -115,7 +144,7 @@
             <img src="https://cdn.shopify.com/s/files/1/1374/2665/products/1_8d37686b-f042-4d98-9462-1358f94773bc.png?v=1570146714.webp"
             alt="Who made me a princess" style="max-width:50%;height:auto;"/></pre>
 
-            <div>
+            <div class="default">
             When I opened my eyes I had become a princess!
             But out of all characters in this romance novel, 
             why is it the princess who has the fate of dying to her own blood-related dad, the emperor!
@@ -132,7 +161,7 @@
                 </h1>
                 <pre> <img src="https://mangadex.org/images/manga/49644.jpeg?1594361103" alt="The Villainess Lives Twice" style="max-width:50%;height:auto;">
                 </pre>
-                <div>
+                <div class="default">
                     A scheming genius, making an emperor! “You’re brother has to do well, for you to also do well.”
                     By committing all sorts of evil acts, she made her brother the emperor. 
                     <br>
@@ -148,7 +177,7 @@
                 <img src="https://archive.fo/dZrvW/6be42933ecf4f3e56bd50e65caaf03e3f213e32c.png" 
                 alt="light and shadow" style="max-width: 50%;height:auto;"/>
             </pre>
-            <div>
+            <div class="default">
                 
 
                 It’s a rude insult when lowly and headstrong servant Edna comes to marry Duke Eli, 
@@ -166,7 +195,7 @@
                 <img src="https://i.pinimg.com/564x/e9/ac/28/e9ac2859a8555bfd330b686addb19d09.jpg" 
                 alt="archmage daughter" style="max-width: 50%;height:auto;"/>
             </pre>
-            <div>
+            <div class="default">
              
                 Maybelle had lived a life of abuse under her parents. 
                 Upon discovery that these 'parents' aren't her true biological parents and that somewhere, 
@@ -182,7 +211,7 @@
                 <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1560988702i/27694696._SX540_.jpg" 
                 alt="https://i.pinimg.com/236x/b8/a8/ae/b8a8ae13290bd6844b4bc765a3629471.jpg" style="max-width: 50%;height:auto;"/>
             </pre>
-            <div>
+            <div class="default">
 
                 As proud daughter of House Monique, Aristia was raised to become the next empress of the Castina Empire. 
                 But with the appearance of a mysterious new girl, everything has fallen apart: 

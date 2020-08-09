@@ -81,30 +81,58 @@
                 font-family:'Times New Roman', Times, serif ;
 
                 }
-
-            div{
-            background-color: papayawhip;
-            width: 200;
-            height: 150;
-            font-family:'Times New Roman', Times, serif ;
-            overflow: auto;
+            .default{
+        
+                background-color: papayawhip;
+                width: 200;
+                height: 150;
+                font-family:'Times New Roman', Times, serif ;
+                overflow: auto;
+                
             }
+            .dropdown {
+                 position: relative;
+                 display: inline-block;
+                 }
             
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: papayawhip;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px lightcoral;
+                padding: 12px 16px;
+                z-index: 1;
+                }
+                
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }            
+      
         </style>
-
     </head>
 
     <body>
-        
-        <header>FLUFFY PUFFS READS</header>
 
+        <header>FLUFFY PUFFS READS</header>
         <section>
             <nav>
-                <ul>
-                    <li><a href="rec.html" style="color: lightcoral;">&#9825; Recommended!</a></li>
+
+                <ul style="border: 1px solid lightcoral; text-align: center;">
+                    <li><a href="index.html"  style="color: lightcoral;">&#9825; MAIN</a></li>
+
+                    <div class="dropdown">
+                        <il><p style="color: lightcoral; text-decoration: underline;">&#9825; MENU</p></il>
+                    <ul style="text-align: left;">
+
+                        <div class="dropdown-content">
+                    <li><a href="rec.html" style="color: lightcoral;">&#9825; Recommended</a></li>
                     <li><a href="isekais.html" style="color: lightcoral;">&#9825; Isekai</a></li>
                     <li><a href="shonenai.html"  style="color: lightcoral;">&#9825; BL</a></li>
+                        </div> 
 
+                    </ul>                       
+                        </div>
                 </ul>
             </nav>
 
@@ -128,7 +156,7 @@
         </section>
 
         <footer>
-            <div>
+            <div class="default">
                 huaysalva.github.io/firstweb
                 <br>
                 <a href="https://www.youtube.com/watch?v=Ek0-ow8F6ic" style="color: lightcoral">Click me!</a>
