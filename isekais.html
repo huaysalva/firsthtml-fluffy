@@ -110,7 +110,26 @@
                 
             .dropdown:hover .dropdown-content {
                 display: block;
-            }            
+            } 
+            .pagination{
+             display: inline-block;   
+            } 
+
+            .pagination a{
+                color: lightcoral;
+                float: center;
+                padding: 8px 16;
+                text-decoration: none;
+            }
+
+            .pagination a.active {
+                
+                background-color: lightcoral;
+                color: peachpuff;
+
+            }
+            .pagination a:hover:not(.active){background-color: peachpuff;}
+           
       
         </style>
     </head>
@@ -136,6 +155,17 @@
 
                     </ul>                       
                         </div>
+                </ul>
+                <ul style="border: 1px solid lightcoral; text-align: center;">
+                    <div class="pagination"> 
+                        <a href="#">&laquo;</a>
+                        <a class="active" href="isekais.html">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">&raquo;</a>
+                    </div>
                 </ul>
 
             </nav>

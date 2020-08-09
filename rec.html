@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>&hearts; Recommendations &hearts;</title>
+        <title>&hearts; Recommendations || Page 1 &hearts;</title>
         <style>
         
          * {
@@ -106,8 +106,27 @@
                 
             .dropdown:hover .dropdown-content {
                 display: block;
-            }            
-      
+            }        
+
+            .pagination{
+             display: inline-block;   
+            } 
+
+            .pagination a{
+                color: lightcoral;
+                float: center;
+                padding: 8px 16;
+                text-decoration: none;
+            }
+
+            .pagination a.active {
+                
+                background-color: lightcoral;
+                color: peachpuff;
+
+            }
+            .pagination a:hover:not(.active){background-color: peachpuff;}
+
         </style>
     </head>
 
@@ -129,9 +148,19 @@
                             <li><a href="isekais.html" style="color: lightcoral;">&#9825; Isekai</a></li>
                             <li><a href="shonenai.html"  style="color: lightcoral;">&#9825; BL</a></li>
                         </div> 
-
                     </ul>                       
                         </div>
+                </ul>
+                <ul style="border: 1px solid lightcoral; text-align: center;">
+                    <div class="pagination"> 
+                        <a href="#">&laquo;</a>
+                        <a class="active" href="rec.html">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">&raquo;</a>
+                    </div>
                 </ul>
             </nav>
 
@@ -220,6 +249,7 @@
                 However a second chance to change her fate sees her reborn ‒to 7 years earlier! 
                 “Is this a dream or reality? Will my destiny repeat?”
             </div>
+
             </article>
             
         </section>
