@@ -2,11 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>&hearts; Reading List's Main Page &hearts;</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>&hearts; Recommendations || Page 2 &hearts;</title>
         <style>
-
-            * {
+        
+         * {
                 box-sizing: border-box;
             }
             header {
@@ -24,18 +24,22 @@
                 }
                 
             nav {
+
                 -webkit-flex: 1;
                 -ms-flex: 1;
                 flex: 1;
                 background: papayawhip; 
                 border: 3px solid white;
                 padding: 20px;
+
                 }
-                
+
             nav ul {
+
                 list-style-type: none;
-                padding: 0;
+                padding: 0;               
                 font-size: 1vw;
+
                  }
 
             article {
@@ -54,7 +58,6 @@
                     padding: 10px;
                     text-align: center;
                     color: lightcoral;
-                    font-size: 1vw;
                     }
                    @media (max-width: 600px) {
                        section {
@@ -63,26 +66,25 @@
                            }
 
             body {background-color: peachpuff;}
-
             h1 {
                 background-color: papayawhip; 
                 color:lightcoral; 
                 border: 3px solid white;
+                font-size: 200%;
                 font-family:'Times New Roman', Times, serif ;
                 }
-                
+
             p {
-                
                 font-size: 1vw;
-                
-            }
+                }
+
             pre {
                 
-
                 font-size: 1vw;
                 font-family:'Times New Roman', Times, serif ;
 
                 }
+            
             .default{
         
                 background-color: papayawhip;
@@ -109,8 +111,27 @@
                 
             .dropdown:hover .dropdown-content {
                 display: block;
-            }            
-      
+            }        
+
+            .pagination{
+             display: inline-block;   
+            } 
+
+            .pagination a{
+                color: lightcoral;
+                float: center;
+                padding: 8px 16;
+                text-decoration: none;
+            }
+
+            .pagination a.active {
+                
+                background-color: lightcoral;
+                color: peachpuff;
+
+            }
+            .pagination a:hover:not(.active){background-color: peachpuff;}
+
         </style>
     </head>
 
@@ -128,42 +149,77 @@
                     <ul style="text-align: left;">
 
                         <div class="dropdown-content">
-                    <li><a href="rec.html" style="color: lightcoral;">&#9825; Recommended</a></li>
-                    <li><a href="isekais.html" style="color: lightcoral;">&#9825; Isekai</a></li>
-                    <li><a href="shonenai.html"  style="color: lightcoral;">&#9825; BL</a></li>
+                            <li><a href="rec.html" style="color: lightcoral;">&#9825; Recommended!</a></li>
+                            <li><a href="isekais.html" style="color: lightcoral;">&#9825; Isekai</a></li>
+                            <li><a href="shonenai.html"  style="color: lightcoral;">&#9825; BL</a></li>
                         </div> 
-
                     </ul>                       
                         </div>
+                </ul>
+                <ul style="border: 1px solid lightcoral; text-align: center;">
+                    <div class="pagination"> 
+                        <a href="#">&laquo;</a>
+                        <a href="rec.html">1</a>
+                        <a class="active" href="rec=2.html">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">&raquo;</a>
+                    </div>
                 </ul>
             </nav>
 
             <article>
+                <header>RECOMMENDED</header>
+                <h1>
+                </h1>
+            <pre>
+            <img src=""
+            alt="" style="max-width:50%;height:auto;"/></pre>
 
-        <header>MAIN</header>
+            <div class="default">
+           </div>  
+            <br>
+            <br>
+                <h1>
+                </h1>
+                <pre> <img src="" alt="" style="max-width:50%;height:auto;">
+                </pre>
+                <div class="default">
+                   
+                </div>
 
-        <p><a href="https://kakaopage.co.id/">
-            <img src="https://64.media.tumblr.com/6d1e47e7be1e2dbc72ff3fbc20e1c21a/tumblr_pvtpngE0uA1tzew82o1_500.png" alt="Moe Desserts"
-            style="width:185px;height:125;">
-        </a></p>
+            <h1>
+            </h1>
+            <pre>
+                <img src="" 
+                alt="" style="max-width: 50%;height:auto;"/>
+            </pre>
+            <div class="default">
+                
+            </div>
 
-            <header>MUSIC</header>
-            <iframe width="320" height="215"
-            src="https://www.youtube.com/embed/2lsOxCyZ69g?autoplay=1">
+            <h1> </h1>
+            <pre>
+                <img src="" 
+                alt="" style="max-width: 50%;height:auto;"/>
+            </pre>
+            <div class="default">
+             
+            </div>
 
-            </iframe>
-            
+            <h1>   
+            </h1>
+            <pre>
+                <img src="" 
+                alt="" style="max-width: 50%;height:auto;"/>
+            </pre>
+            <div class="default">
+
+            </div>
 
             </article>
+            
         </section>
-
-        <footer>
-            <div class="default">
-                huaysalva.github.io/firstweb
-                <br>
-                <a href="https://www.youtube.com/watch?v=Ek0-ow8F6ic" style="color: lightcoral">Click me!</a>
-            </div>
-        </footer>
-
     </body>
 </html>
