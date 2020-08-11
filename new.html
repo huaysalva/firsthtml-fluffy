@@ -14,12 +14,12 @@
             body {
                 margin: 0;
                 
-                background-color:rgb(158, 190, 190);
+                background-color:rgb(156, 194, 209);
 
                 }
                 
                 .header {
-                    background-color:rgb(158, 190, 190);
+                background-color:rgb(156, 194, 209);
                     padding: 5px;
                     text-align: center;
                     color:white;
@@ -57,7 +57,7 @@
                     -webkit-flex: 1;
                     -ms-flex: 1;
                     flex: 1;
-                    background-color: rgb(158, 190, 190);
+                    background-color:rgb(156, 194, 209);
 
                     color: steelblue; 
                 
@@ -72,7 +72,7 @@
                 -ms-flex: 3;
                 flex: 3;
                 padding: 10px;
-                background-color: rgb(158, 190, 190);
+                background-color:rgb(156, 194, 209);
                 color: steelblue; 
                 border: 3px solid white;
                 text-align: center;
@@ -87,7 +87,7 @@
                     font-size: 1vw;
                     }
                 .default{
-                    width: 250;
+                    width: 100%;
                     height: auto;
                     font-family:'Times New Roman', Times, serif ;
                     overflow: auto;
@@ -111,9 +111,9 @@
 
                     .block {
                         padding: 10px;
-                        background-color: rgb(158, 190, 190);
+                        background-color:rgb(156, 194, 209);
                         color: steelblue; 
-                        border: 3px solid rgb(158, 190, 190);
+                        background-color:rgb(156, 194, 209);
                         text-align: center;
                         font-size: 1vw;
 
@@ -126,7 +126,26 @@
                         width: 100%;
                         }
                         
-                       
+                        .pagination{
+             display: inline-block;   
+            } 
+
+            .pagination a{
+                color: steelblue;
+                float: center;
+                padding: 8px 16;
+                text-decoration: none;
+            }
+
+            .pagination a.active {
+                
+                background-color: steelblue;
+                color: white;
+
+            }
+            .pagination a:hover:not(.active){background-color: rgb(158, 190, 190);}
+           
+      
                         
                     </style>
                     </head>
@@ -157,7 +176,6 @@
 
                                 </div>
                                     <div class="menu">
-                                        <p>Grayscale Mode</p>
                                     </div>
 
                                     <div class="block"> </div>
@@ -183,6 +201,7 @@
                          
                             <article>
                                 <div style="background-color: aliceblue">
+                                    <br>
                                    <h2>Last Exile: Ginyoku no Fam</h2>
                                    <img src="https://avvesione.files.wordpress.com/2011/12/last_exile_ginyoku_no_fam-07-fam-giselle-pirates-flying-sky-shock.jpg" style="max-width:50%;height:auto;" alt="fam">
                                    <div class="default">
@@ -203,8 +222,7 @@
                                        <br>
                                        The Vespa continues to weave through the barrage of bombs, while the fleets of the Federation close in on Turan.
                                        What are the motives of Luscinia, the man leading the Ades Federation into the war? And what is the secret behind "Exile"?
-                                       
-                                    
+                                            <br>                              
                                    </div>
                                 </div>
                             </article>
@@ -213,6 +231,15 @@
                 
                 </body>
                 <footer>
+                    <div class="pagination"> 
+                        <a href="#">&laquo;</a>
+                        <a class="active" href="new.html">1</a>                       
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">&raquo;</a>
+                    </div> <br>
                     huaysalva.github.io
                 </footer>
                 </html>
