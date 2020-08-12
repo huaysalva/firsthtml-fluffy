@@ -1,0 +1,50 @@
+ <section>
+            <nav>
+
+                <ul style="border: 1px solid lightcoral; text-align: center;">
+                    <li><a href="index.html"  style="color: lightcoral;">&#9825; MAIN</a></li>
+                    <li><br></li>
+                    <li><a href="new.html"  style="color: lightcoral;">&#9825; ANIME</a></li>
+
+
+                    <div class="dropdown">
+                        <il><p style="color: lightcoral; text-decoration: underline;">&#9825; MANHWA || MANHUA</p></il>
+                    <ul style="text-align: left;">
+
+                        <div class="dropdown-content">
+                    <li><a href="rec.html" style="color: lightcoral;">&#9825; Recommended</a></li>
+                    <li><a href="isekais.html" style="color: lightcoral;">&#9825; Isekai</a></li>
+                    <li><a href="shonenai.html"  style="color: lightcoral;">&#9825; BL</a></li>
+                        </div> 
+
+                    </ul>                       
+                        </div>
+                </ul>
+            </nav>
+
+            <article>
+
+        <header>MAIN</header>
+
+        <p><a href="https://kakaopage.co.id/">
+            <img src="https://64.media.tumblr.com/6d1e47e7be1e2dbc72ff3fbc20e1c21a/tumblr_pvtpngE0uA1tzew82o1_500.png" alt="Moe Desserts"
+            style="width:185px;height:125;">
+        </a></p>
+
+            <header>MUSIC</header>
+            <iframe width="320" height="215"
+            src="https://www.youtube.com/embed/2lsOxCyZ69g?autoplay=1">
+
+            </iframe>
+            
+
+            </article>
+        </section>
+
+        <footer>
+            <div class="default">
+                huaysalva.github.io/firstweb
+                <br>
+                <a href="https://www.youtube.com/watch?v=Ek0-ow8F6ic" style="color: lightcoral">Click me!</a>
+            </div>
+        </footer>

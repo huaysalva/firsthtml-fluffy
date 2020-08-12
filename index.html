@@ -3,32 +3,48 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>&hearts; Reading List's Main Page &hearts;</title>
+        <title>&hearts; INDEX &hearts;</title>
         <style>
 
-            * {
-                box-sizing: border-box;
+              * {
+            box-sizing: border-box;
             }
-            header {
-                background-color: papayawhip;
-                padding: 2%;
-                text-align: center;
-                font-size: 20px;
-                color: lightcoral;
-                border: 3px solid white;
-            }
+            
+            body {
+                margin: 0;                
+                background-color:white;
+                }  
 
+            .header {
+                background-color:black;
+                padding: 5px;
+                text-align: center;
+                color:white;
+                    }
+                
+               
+                    
             section {
                 display: -webkit-flex;
                 display: flex;
                 }
                 
+            .side {
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                background-color:black;
+                color: white;                 
+                text-align: center;
+                padding: 27px 16px;
+                text-decoration: none; }
+
             nav {
                 -webkit-flex: 1;
                 -ms-flex: 1;
                 flex: 1;
-                background: papayawhip; 
-                border: 3px solid white;
+                background: white; 
+                border: 3px solid black;
                 padding: 20px;
                 }
                 
@@ -43,55 +59,69 @@
                 -ms-flex: 3;
                 flex: 3;
                 padding: 10px;
-                background-color: papayawhip;
-                color:lightcoral; 
-                border: 3px solid white;
+                background-color:white;
+                color: black; 
+                border: 10px solid black;
                 text-align: center;
+                font-size: 1vw;
+
                 }
 
             footer {
-                    background-color: papayawhip;
+                    background-color: black;
                     padding: 10px;
                     text-align: center;
-                    color: lightcoral;
+                    color: white;
                     font-size: 1vw;
                     }
-                   @media (max-width: 600px) {
-                       section {
-                           -webkit-flex-direction: column;
-                           flex-direction: column;  }
-                           }
 
-            body {background-color: peachpuff;}
-
-            h1 { 
-                background-color: papayawhip; 
-                color:lightcoral; 
-                border: 3px solid white;
-                font-family:'Times New Roman', Times, serif ;
-                }
-                
-            p {
-                
-                font-size: 1vw;
-                
-            }
+                    
             pre {
                 
-
                 font-size: 1vw;
                 font-family:'Times New Roman', Times, serif ;
 
                 }
+
             .default{
-        
-                background-color: papayawhip;
-                width: 200;
-                height: 150;
-                font-family:'Times New Roman', Times, serif ;
-                overflow: auto;
-                
+                    width: 100%;
+                    height: auto;
+                    font-family:'Times New Roman', Times, serif ;
+                    overflow: auto;
+                    }
+                                   
+            @media screen and (max-width:600px) {
+                    section {
+                           -webkit-flex-direction: column;
+                           flex-direction: column;  }
+                    }
+
+                    .center {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 100%;
+                        }
+                        
+                        .pagination{
+             display: inline-block;   
+            } 
+
+            .pagination a{
+                color: white;
+                float: center;
+                padding: 8px 16;
+                text-decoration: none;
             }
+
+            .pagination a.active {
+                
+                background-color:white;
+                color: black;
+
+            }
+            .pagination a:hover:not(.active){background-color: grey;}
+                  
             .dropdown {
                  position: relative;
                  display: inline-block;
@@ -100,73 +130,108 @@
             .dropdown-content {
                 display: none;
                 position: absolute;
-                background-color: papayawhip;
+                background-color: white;
                 min-width: 160px;
-                box-shadow: 0px 8px 16px 0px lightcoral;
+                box-shadow: 0px 8px 16px 0px black;
                 padding: 12px 16px;
                 z-index: 1;
                 }
                 
             .dropdown:hover .dropdown-content {
                 display: block;
-            }            
-      
-        </style>
-    </head>
+            } 
 
-    <body>
+            </style>
+    </head>                   
+                    <body>
+                        
+                        <div class="header">
+                            <h1>INDEX</h1>
+                            <p>&#9825; Fluffy puff's index || Main Menu &#9825;</p>
+                        </div>                        
+                        
+                         <img src="https://i.pinimg.com/originals/a7/0e/aa/a70eaae3757441bd8de4d939b4207714.gif" 
+                        style="max-width: 85%; height: auto;" alt="header" class="center">
 
-        <header>FLUFFY PUFFS READS</header>
-        <section>
-            <nav>
+                        <section>
+                        
+                            <div class="side">
+                                <div class="menu">
+                                  <nav>
+                                      
 
-                <ul style="border: 1px solid lightcoral; text-align: center;">
-                    <li><a href="index.html"  style="color: lightcoral;">&#9825; MAIN</a></li>
-                    <li><br></li>
-                    <li><a href="new.html"  style="color: lightcoral;">&#9825; ANIME</a></li>
+                                    <ul style="border: 3px solid black; text-align: center;">
+                                        <li><a href="index.html"  style="color: black;">&#9825; MAIN</a></li>
+                                        <li><br></li>                                       
+                                        <li><a href="new.html"  style="color: black;">&#9825; ANIME</a></li>
+                                    
+                                        <div class="dropdown">
+                                            <il><p style="color: black; text-decoration: underline;">&#9825; MENU</p></il>
+                                        <ul style="text-align: left;">
+                    
+                                            <div class="dropdown-content">
+                                                <li><a href="rec.html" style="color: black;">&#9825; Recommended!</a></li>
+                                                <li><a href="isekais.html" style="color: black;">&#9825; Isekai</a></li>
+                                                <li><a href="shonenai.html"  style="color: black;">&#9825; BL</a></li>
+                                                </div>  
+                                                </ul>
+                                        </div>
+                                        </ul>
+                                        
+                                    <ul style="border: 3px solid black; text-align: center;">
 
+                                        <li><br></li>                                       
+                                        <li><br></li>                                       
 
-                    <div class="dropdown">
-                        <il><p style="color: lightcoral; text-decoration: underline;">&#9825; MENU</p></il>
-                    <ul style="text-align: left;">
+                                    </ul>
 
-                        <div class="dropdown-content">
-                    <li><a href="rec.html" style="color: lightcoral;">&#9825; Recommended</a></li>
-                    <li><a href="isekais.html" style="color: lightcoral;">&#9825; Isekai</a></li>
-                    <li><a href="shonenai.html"  style="color: lightcoral;">&#9825; BL</a></li>
-                        </div> 
+                                    <ul style="border: 3px solid black; text-align: center;">
 
-                    </ul>                       
-                        </div>
-                </ul>
-            </nav>
+                                        <li><br></li>                                       
+                                        <li><br></li>                                       
 
-            <article>
+                                    </ul>
+                                    
+                                        <ul>
+                                            <div>
+                                                <iframe width="320" height="215"
 
-        <header>MAIN</header>
+                                                src="https://www.youtube.com/embed/2lsOxCyZ69g?autoplay=1"
+                                                >
+                                                </iframe>
+                                            </div>
+                                        </ul>
 
-        <p><a href="https://kakaopage.co.id/">
-            <img src="https://64.media.tumblr.com/6d1e47e7be1e2dbc72ff3fbc20e1c21a/tumblr_pvtpngE0uA1tzew82o1_500.png" alt="Moe Desserts"
-            style="width:185px;height:125;">
-        </a></p>
+                                  </nav>
+                                </div>                                   
+                            </div>
+                         
+                            <article>
+                                <div>
+                                    <br>
+                                   <h2>ABOUT INDEX</h2>
+                                   <div class="default">
+                                 
+                                    Insert about here and maybe some cute photos
 
-            <header>MUSIC</header>
-            <iframe width="320" height="215"
-            src="https://www.youtube.com/embed/2lsOxCyZ69g?autoplay=1">
+                                   </div> </div>
 
-            </iframe>
-            
+                            </article>
+                        </section>
 
-            </article>
-        </section>
-
-        <footer>
-            <div class="default">
-                huaysalva.github.io/firstweb
-                <br>
-                <a href="https://www.youtube.com/watch?v=Ek0-ow8F6ic" style="color: lightcoral">Click me!</a>
-            </div>
-        </footer>
-
-    </body>
-</html>
+                
+                </body>
+                <footer>
+                    <div class="pagination"> 
+                        <a href="#">&laquo;</a>
+                        <a class="active" href="index.html">1</a>                       
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">&raquo;</a>
+                    </div> <br>
+                    huaysalva.github.io
+               <br> <a href="https://www.youtube.com/watch?v=Ek0-ow8F6ic" style="color: white">Click me!</a>
+                </footer>
+                </html>
