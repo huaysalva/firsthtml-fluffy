@@ -74,21 +74,6 @@
             font-size: 1vw;
         }
 
-
-        pre {
-
-            font-size: 1vw;
-            font-family: 'Times New Roman', Times, serif;
-
-        }
-
-        .default {
-            width: 100%;
-            height: auto;
-            font-family: 'Times New Roman', Times, serif;
-            overflow: auto;
-        }
-
         @media screen and (max-width:600px) {
             section {
                 -webkit-flex-direction: column;
@@ -181,8 +166,9 @@
         .tab {
             overflow: hidden;
             border: 1px solid black;
-            background-color: black;            
+            background-color: black;
         }
+
         .tab button {
             background-color: inherit;
             float: left;
@@ -192,19 +178,18 @@
             padding: 14px 16px;
             transition: 0.3s;
             font-size: 17px;
-            color:white
+            color: white
         }
 
-        /* Change background color of buttons on hover */
         .tab button:hover {
             background-color: lightcoral;
-            color:black;
+            color: black;
         }
 
         .tab button.active {
             background-color: lightcoral;
-            color:black;
-            
+            color: black;
+
         }
 
         .tabcontent {
@@ -213,14 +198,32 @@
             border: 1px solid white;
             border-top: none;
         }
-        .topright{
+
+        .topright {
             float: right;
             cursor: pointer;
             font-size: 1vw;
         }
-        .topright:hover{
-            color:lightcoral;
-            
+
+        .topright:hover {
+            color: lightcoral;
+        }
+
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
         }
     </style>
 </head>
@@ -298,37 +301,83 @@
 
             <div class="tab">
                 <button class="tablinks" onclick="openTitle(event, 'Playlist')" id="defaultOpen">Playlist</button>
-                <button class="tablinks" onclick="openTitle(event, 'Lyrics')">Lyrics</button>
-              </div>
-              
-              <div id="Playlist" class="tabcontent">
+                <button class="tablinks" onclick="openTitle(event, 'Charts')">List</button>
+            </div>
+
+            <div id="Playlist" class="tabcontent">
                 <span onclick="this.parentElement.style.display='none'" class="topright"></span>
                 <button class="accordion">Shout Baby</button>
                 <div class="panel">
                     <iframe width="320" height="215" src="https://www.youtube.com/embed/watch?v=Ww8oxgqDQSs">
-                        </iframe>
-                </div>   
-        
+                    </iframe>
+                </div>
+
                 <button class="accordion">Kanade</button>
                 <div class="panel">
-    
-                            <iframe width="320" height="215" src="https://www.youtube.com/embed/2lsOxCyZ69g?autoplay=1">
-                             
-                        </iframe>
-                </div>               
-              </div>
-            
-              <div id="Lyrics" class="tabcontent">
-                <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-                <p>  </p>
-              </div>
+                    <iframe width="320" height="215" src="https://www.youtube.com/embed/2lsOxCyZ69g?autoplay=1">
+                    </iframe>
+                </div>
+            </div>
+
+            <div id="Charts" class="tabcontent">
+                <span onclick="this.parentElement.style.display='none'" class="topright"></span>
+                <button class="accordion">Reading List</button>
+                <div class="panel">
+                    <table>
+                        <tr>
+                            <th>Title</th>
+                            <th>Chapter</th>
+                            <th>Ratings</th>
+                            <th>Type</th>
+                        </tr>
+                        <tr>
+                            <td>Archmage's Daughter</td>
+                            <td>48</td>
+                            <td>5/5</td>
+                            <td>Manhwa</td>
+                        </tr>
+                        <tr>
+                            <td>I Was Just An Ordinary Lady</td>
+                            <td>27</td>
+                            <td>5/5</td>
+                            <td>Manhwa</td>
+                        </tr>
+                        <tr>
+                            <td>Who Made Me a Princess</td>
+                            <td>70</td>
+                            <td>4.5/5</td>
+                            <td>Manhwa</td>
+                        </tr>
+                        <tr>
+                            <td>Crimson Karma</td>
+                            <td>40</td>
+                            <td>3/5</td>
+                            <td>Manhwa</td>
+                        </tr>
+                        <!-- Novels -->
+                        <tr>
+                            <td>Solo Leveling</td>
+                            <td>Fin</td>
+                            <td>5/5</td>
+                            <td>Korean Novel</td>
+                        </tr>   
+                        <tr>
+                            <td>The Villainess Reverse The Hourglass</td>
+                            <td>Fin</td>
+                            <td>4.8/5</td>
+                            <td>Korean Novel</td>
+                        </tr>          
+                    </table>
+
+                </div>
+            </div>
 
         </article>
 
     </section>
     <script>
-        
-        
+
+
         var acc = document.getElementsByClassName("accordion");
         var i;
 
@@ -348,7 +397,7 @@
         function openTitle(evt, title) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
-            
+
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
             }
@@ -359,7 +408,7 @@
             document.getElementById(title).style.display = "block";
             evt.currentTarget.className += " active";
         }
-document.getElementById("defaultOpen").click();
+        document.getElementById("defaultOpen").click();
     </script>
 
 </body>
